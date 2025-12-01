@@ -2,6 +2,7 @@ import React from 'react';
 import phoneImg from '../assets/phoneImg.png';
 import messageDoodle from '../assets/messageIcon.png'; 
 import checkmarkIcon from '../assets/checkmark.png'; 
+import Button from './Button';
 const WIH = () => {
   return (
     <div className="w-full px-4 md:px-16 py-10 md:mt-12">
@@ -55,7 +56,7 @@ const WIH = () => {
               <span><b>Human, Not Heavy:</b> no calorie obsession, no shaming—just smart</span>
             </li>
           </ul>
-          <button className="bg-[#E2221F] mb-4 md:mt-6 text-white px-4 sm:px-6 ml-[0px] py-3 sm:py-4 rounded-lg text-xl sm:text-2xl  font-medium shadow-md">
+          <button className="bg-red-500 hover:bg-red-600 transition-colors text-white px-6 py-3 rounded-md text-base sm:text-lg font-semibold shadow-md inline-block">
             See Rewards
           </button>
           

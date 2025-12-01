@@ -43,7 +43,7 @@ const Footer = () => {
         <img src={logo} alt="HintsWork Logo" className="h-20" />
       </div>
 
-      <div className="flex flex-col justify-between w-full bg-[#f5f2e1] px-6 py-8">
+      <div className="flex flex-col justify-around w-full bg-[#f5f2e1] px-6 py-8 md:pl-32">
         <div className="grid md:grid-cols-4 gap-8 w-full max-w-6xl mx-auto">
           <FooterSection
             title="Company"
@@ -77,12 +77,12 @@ const Footer = () => {
               'Terms of Service',
               'Privacy Policy',
               'Cookie Policy',
-              'Accessibility Statement',
-              'Security',
-              'DPA',
-              'GDPR/CCPA Notice',
-              'Medical Disclaimer',
-              'Admin Login'
+              // 'Accessibility Statement',
+              // 'Security',
+              // 'DPA',
+              // 'GDPR/CCPA Notice',
+              // 'Medical Disclaimer',
+              // 'Admin Login'
             ]}
           />
         </div>

@@ -1,9 +1,11 @@
 import React from "react";
-import trophy from "../assets/trophy.png";
+
 import lightbulb from "../assets/lightbulb.png";
 import doublePhone from "../assets/doublePhone.png";
 import home from "../assets/Home.png";
 import Header from "./Header";
+import bulb from '../assets/bulb.png';
+import trophy from '../assets/trophy.png';
 const LandPage1 = () => {
   return (
     <div
@@ -12,8 +14,8 @@ const LandPage1 = () => {
     <div className=""> 
     <div className="flex flex-col-reverse md:flex-row items-start justify-between md:pl-[72px] bg-transparent ">
       <div className="w-full max-w-1/2 text-center  md:text-left md:pr-30 md:flex-col mb-12 pt-0 md:pt-16 ">
-          <h1 className="text-4xl md:text-4xl font-bold text-red-600">
-            Science Says...
+          <h1 className="text-4xl md:text-5xl font-bold font-montserrat">
+            Small Hints <span className="text-red-600">= Big Changes</span>
           </h1>
           <div className="max-w-sm m-auto md:m-0">
             <p className="text-gray-700 text-Montserrat sm:text-xs md:text-xl md:z-10 mb-6 mt-6 md:mt-8 leading-relaxed text-wrap">
@@ -39,7 +41,17 @@ const LandPage1 = () => {
       </div>
     </div>
     </div> 
-      
+      <img
+            src={bulb}
+            alt="bulb"
+            className="h-[160px]  w-auto object-contain -mt-[320px] ml-[180px]"
+          />
+
+          <img
+            src={trophy}
+            alt="trophy"
+            className="h-[160px]  w-auto object-contain ml-[40px]"
+          />
     </div>
   );
 };

@@ -1,20 +1,21 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react"; 
-import hintsLogo from "../assets/hintsLogo.png";
+// import hintsLogo from "../assets/hintsLogo.png";
+import logo from '../assets/logo.png';
 import {Link} from 'react-scroll'
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="w-full px-5 md:px-10 lg:px-12 xl:px-16 bg-[#fedc63] md:bg-transparent">
-      <nav className="flex justify-between w-full p-2 items-center py-4  ">
+    <header className="w-full px-5 md:px-10 lg:px-12 xl:px-16  md:bg-transparent z-50">
+      <nav className="flex justify-between w-full p-2 items-center py-4 relative z-40 ">
         <div className="flex items-center  space-x-10">
           <img
-            src={hintsLogo}
+            src={logo}
             alt="logo"
             className="h-20  w-auto object-contain"
           />
         </div>
-        <ul className="hidden md:flex items-center gap-8 text-lg font-medium z-10">
+        <ul className="hidden lg:flex xl:flex items-center gap-8 text-lg font-medium z-10">
           <li>
             <a href="#" className="text-red-500 hover:text-red-600">
               Home
@@ -41,17 +42,17 @@ const Header = () => {
         </ul>
     
         <button
-          className="md:hidden p-2 rounded focus:outline-none"
+          className="lg:hidden xl:hidden p-2 rounded focus:outline-none z-50 relative"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={28} /> : <Menu size={38} className="ml-10" />}
         </button>
       </nav>
       {isOpen && (
-        <div className="md:hidden bg-white px-6 pb-4 shadow-md">
-          <ul className="flex flex-col gap-4 text-lg font-medium">
+        <div className="lg:hidden xl:hidden bg-white px-6 pb-4 shadow-md  z-40 w-full relative">
+          <ul className="flex flex-col gap-4 text-lg font-medium ">
             <li>
-              <a href="#" className="text-red-500">Home</a>
+              <a href="#" className="text-red-500 ">Home</a>
             </li>
 
             <li>

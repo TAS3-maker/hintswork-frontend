@@ -1,16 +1,17 @@
 import React from 'react';
 import shape from '../assets/shape.png';
-import img1 from '../assets/img1.png';
-import img2 from '../assets/img2.png';
-import img3 from '../assets/img3.png';
-import img4 from '../assets/img4.png';
-import img5 from '../assets/img5.png';
+// import img1 from '../assets/img1.png';
+import pick1 from '../assets/pick1.png';
+import pick2 from '../assets/pick2.png';
+import pick3 from '../assets/pick3.png';
+import pick4 from '../assets/pick4.png';
+import pick5 from '../assets/pick5.png';
 import img6 from '../assets/img6.png';
 
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 const ExOfHints = () => {
-  const images = [img1, img2, img3, img4, img5, img6];
+  const images = [pick1, pick2, pick3, pick4, pick5, img6];
 
   return (
     <div className="relative pt-6 md:pt-12 pb-8 md:pb-16 px-4 md:px-12 overflow-hidden">
