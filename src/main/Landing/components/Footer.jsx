@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../assets/hintsLogo.png';
+import { Link } from 'react-router-dom';
 import {
   FaXTwitter,
   FaFacebookF,
@@ -14,7 +15,7 @@ const FooterSection = ({ title, items }) => {
 
   return (
     <div className="w-full md:w-auto">
-      
+
       <div
         className="md:hidden flex justify-between items-center py-3 border-b cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}
@@ -24,9 +25,8 @@ const FooterSection = ({ title, items }) => {
       </div>
 
       <ul
-        className={`${
-          isOpen ? 'block' : 'hidden'
-        } md:block space-y-2 mt-2 md:mt-0 text-lg`}
+        className={`${isOpen ? 'block' : 'hidden'
+          } md:block space-y-2 mt-2 md:mt-0 text-lg`}
       >
         {items.map((item, idx) => (
           <li key={idx}>{item}</li>
@@ -43,8 +43,8 @@ const Footer = () => {
         <img src={logo} alt="HintsWork Logo" className="h-20" />
       </div>
 
-      <div className="flex flex-col justify-around w-full bg-[#f5f2e1] px-6 py-8 md:pl-32">
-        <div className="grid md:grid-cols-4 gap-8 w-full max-w-6xl mx-auto">
+      <div className="flex flex-col justify-around w-full bg-[#f5f2e1] px-6 py-8 ">
+        {/* <div className="grid md:grid-cols-4 gap-8 w-full max-w-6xl mx-auto">
           <FooterSection
             title="Company"
             items={['Home', 'Contact', 'Press', 'Careers', 'Brand Assets']}
@@ -85,16 +85,77 @@ const Footer = () => {
               // 'Admin Login'
             ]}
           />
+        </div> */}
+        <div>
+          <ul className='flex align-middle justify-center gap-1 text-[16px] sm:text-[20px]'>
+            <li>
+              <Link to='/' >[terms of use] |</Link>
+            </li>
+            <li>
+              <Link to='/' >[privacy policy] |</Link>
+            </li>
+            <li>
+              <Link to='/' >[contact]</Link>
+            </li>
+          </ul>
         </div>
 
-        <div className="flex justify-center space-x-6 text-2xl mt-10">
-          <FaXTwitter />
-          <FaFacebookF />
-          <FaInstagram />
-          <FaPinterest />
-          <FaLinkedinIn />
-          <FaYoutube />
+        <div className="flex justify-center space-x-7 text-xl sm:text-2xl mt-10">
+          <Link
+            to="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-500"
+          >
+            <FaXTwitter />
+          </Link>
+
+          <Link
+            to="https://facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-600"
+          >
+            <FaFacebookF />
+          </Link>
+
+          <Link
+            to="https://instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-pink-500"
+          >
+            <FaInstagram />
+          </Link>
+
+          <Link
+            to="https://pinterest.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-red-600"
+          >
+            <FaPinterest />
+          </Link>
+
+          <Link
+            to="https://linkedin.com/in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-700"
+          >
+            <FaLinkedinIn />
+          </Link>
+
+          <Link
+            to="https://youtube.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-red-500"
+          >
+            <FaYoutube />
+          </Link>
         </div>
+
 
         <div className="w-full border-t border-gray-400 my-6"></div>
 
