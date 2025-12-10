@@ -33,7 +33,7 @@ const PartnerWithHints = () => {
     <Element name='contactUs'>
       <div className="relative text-center m-auto px-6 mt-10 bg-white w-full max-w-[1200px]">
         <div className='relative z-10'>
-        <h2 className="text-4xl md:text-5xl font-bold mb-6">
+        <h2 className="text-4xl md:text-6xl xl:text-7xl 2xl:text-8xl font-bold mb-6">
           Partner <span className="text-red-500">with HintsWork</span>
         </h2>
 

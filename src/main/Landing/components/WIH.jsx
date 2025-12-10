@@ -6,7 +6,7 @@ import Button from './Button';
 const WIH = () => {
   return (
     <div className="w-full px-4 md:px-16 py-10 md:mt-0">
-      <h1 className="text-4xl mt-10 md:mt-10  md:text-5xl font-bold text-center mb-10">
+      <h1 className="text-4xl md:text-6xl xl:text-7xl 2xl:text-8xl mt-10 md:mt-10 font-bold text-center mb-10">
         What is <span className="text-red-500">HintsWork?</span>
       </h1>
       <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-10 md:gap-20">
@@ -28,14 +28,14 @@ const WIH = () => {
           />
         </div>
         <div className="flex-1 max-w-xl">
-          <h2 className="text-2xl font-bold mb-2">Wellness Made Simple</h2>
-          <p className="text-gray-600 text-base md:text-lg mb-4">
+          <h2 className="text-2xl 2xl:text-3xl font-bold mb-2">Wellness Made Simple</h2>
+          <p className="text-gray-600 text-base md:text-lg 2xl:text-2xl mb-4">
             Hints Work! is a behavior-change platform that helps you build better habits through small, actionable nudges we call Hints. Whether it’s improving focus, eating healthier, or managing stress, our Hints guide you step-by-step and reward consistency—no overwhelm.
           </p>
           <ul className="space-y-3 mb-6">
             <li className="flex items-start">
               <span className="text-red-500 text-xl mr-2 "><img src={checkmarkIcon} /></span>
-              <span><b>Simple Hints:</b> two to three words you can act on now.</span>
+              <span className='text-base 2xl:text-xl'><b>Simple Hints:</b> two to three words you can act on now.</span>
             </li>
             <img
             src={messageDoodle}
@@ -45,18 +45,18 @@ const WIH = () => {
           />
             <li className="flex items-start z-10">
               <span className="text-red-500 text-xl mr-2 "><img src={checkmarkIcon} /></span>
-              <span><b>Backed by Research:</b> every Hint is validated (Science Says...)</span>
+              <span className='text-base 2xl:text-xl'><b>Backed by Research:</b> every Hint is validated (Science Says...)</span>
             </li>
             <li className="flex items-start z-10">
               <span className="text-red-500 text-xl mr-2"><img src={checkmarkIcon} /></span>
-              <span><b>Gamified for Momentum:</b> points, streaks, trophies—progress you can feel.</span>
+              <span className='text-base 2xl:text-xl'><b>Gamified for Momentum:</b> points, streaks, trophies—progress you can feel.</span>
             </li>
             <li className="flex items-start z-10">
               <span className="text-red-500 text-xl mr-2"><img src={checkmarkIcon} /></span>
-              <span><b>Human, Not Heavy:</b> no calorie obsession, no shaming—just smart</span>
+              <span className='text-base 2xl:text-xl'><b>Human, Not Heavy:</b> no calorie obsession, no shaming—just smart</span>
             </li>
           </ul>
-          <button className="bg-red-500 hover:bg-red-600 transition-colors text-white px-6 py-3 rounded-md text-base sm:text-lg font-semibold shadow-md inline-block">
+          <button className="bg-[#E2221F] w-[250px] mb-4 md:mt-6 text-white px-4 sm:px-6 ml-[0px] py-2 rounded-lg text-xl sm:text-2xl  font-medium shadow-md">
             See Rewards
           </button>
           

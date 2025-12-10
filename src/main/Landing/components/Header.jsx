@@ -6,6 +6,7 @@ import { Link } from 'react-scroll';
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
+  const [activeLink, setActiveLink] = useState("Home");
 
   // Sticky scroll effect
   useEffect(() => {
@@ -45,34 +46,101 @@ const Header = () => {
         </div>
 
         <ul className="hidden lg:flex items-center gap-8 text-lg font-medium z-10">
+          <Link
+            to="Home"
+            spy={true}
+            smooth={true}
+            duration={500}
+            onClick={() => setActiveLink("Home")}
+            onSetActive={() => setActiveLink("Home")}
+            className={`${activeLink === "Home" ? "text-red-500" : ""} cursor-pointer hover:text-red-500`}
+          >
+            Home
+          </Link>
           <li>
-            <a href="#" className="text-red-500 hover:text-red-600">
-              Home
-            </a>
+
+            <Link
+            to="HIW"
+            spy={true}
+            smooth={true}
+            duration={800}
+            onClick={() => setActiveLink("HIW")}
+            onSetActive={() => setActiveLink("HIW")}
+            className={`${activeLink === "HIW" ? "text-red-500" : ""} cursor-pointer hover:text-red-500`}
+          >
+            How It Works
+          </Link>
+
           </li>
           <li>
-            <Link to="HIW" smooth duration={800} className="hover:text-red-600 cursor-pointer">
-              How It Works
-            </Link>
+            <Link
+            to="Apps"
+            spy={true}
+            smooth={true}
+            duration={800}
+            onClick={() => setActiveLink("Apps")}
+            onSetActive={() => setActiveLink("Apps")}
+            className={`${activeLink === "Apps" ? "text-red-500" : ""} cursor-pointer hover:text-red-500`}
+          >
+            Apps
+          </Link>
+           
           </li>
           <li>
-            <Link to="Apps" className="hover:text-red-600 cursor-pointer">Apps</Link>
+            <Link
+            to="Science"
+            spy={true}
+            smooth={true}
+            duration={800}
+            onClick={() => setActiveLink("Science")}
+            onSetActive={() => setActiveLink("Science")}
+            className={`${activeLink === "Science" ? "text-red-500" : ""} cursor-pointer hover:text-red-500`}
+          >
+            Science
+          </Link>
+           
           </li>
           <li>
-            <Link to="Science" smooth duration={800} className="hover:text-red-600 cursor-pointer">
-              Science
-            </Link>
+            <Link
+            to="Awards"
+            spy={true}
+            smooth={true}
+            duration={800}
+            onClick={() => setActiveLink("Awards")}
+            onSetActive={() => setActiveLink("Awards")}
+            className={`${activeLink === "Awards" ? "text-red-500" : ""} cursor-pointer hover:text-red-500`}
+          >
+            Awards
+          </Link>
+           
           </li>
           <li>
-            <Link to="Awards" className="hover:text-red-600 cursor-pointer">Awards</Link>
+            <Link
+            to="Blog"
+            spy={true}
+            smooth={true}
+            duration={800}
+            onClick={() => setActiveLink("Blog")}
+            onSetActive={() => setActiveLink("Blog")}
+            className={`${activeLink === "Blog" ? "text-red-500" : ""} cursor-pointer hover:text-red-500`}
+          >
+            Blog
+          </Link>
+            
           </li>
           <li>
-            <Link to="Blog" className="hover:text-red-600 cursor-pointer">Blog</Link>
-          </li>
-          <li>
-            <Link to="contactUs" smooth duration={800} className="hover:text-red-600 cursor-pointer">
-              Contact
-            </Link>
+            <Link
+            to="contactUs"
+            spy={true}
+            smooth={true}
+            duration={800}
+            onClick={() => setActiveLink("contactUs")}
+            onSetActive={() => setActiveLink("contactUs")}
+            className={`${activeLink === "contactUs" ? "text-red-500" : ""} cursor-pointer hover:text-red-500`}
+          >
+            Contact
+          </Link>
+           
           </li>
         </ul>
 
@@ -87,7 +155,110 @@ const Header = () => {
       {isOpen && (
         <div className="lg:hidden xl:hidden bg-white px-6 pb-4 shadow-md z-40 w-full relative">
           <ul className="flex flex-col gap-4 text-lg font-medium ">
-            <li><a href="#" className="text-red-500">Home</a></li>
+
+
+           <Link
+            to="Home"
+            spy={true}
+            smooth={true}
+            duration={500}
+            onClick={() => setActiveLink("Home")}
+            onSetActive={() => setActiveLink("Home")}
+            className={`${activeLink === "Home" ? "text-red-500" : ""} cursor-pointer hover:text-red-500`}
+          >
+            Home
+          </Link>
+          <li>
+
+            <Link
+            to="HIW"
+            spy={true}
+            smooth={true}
+            duration={800}
+            onClick={() => setActiveLink("HIW")}
+            onSetActive={() => setActiveLink("HIW")}
+            className={`${activeLink === "HIW" ? "text-red-500" : ""} cursor-pointer hover:text-red-500`}
+          >
+            How It Works
+          </Link>
+
+          </li>
+          <li>
+            <Link
+            to="Apps"
+            spy={true}
+            smooth={true}
+            duration={800}
+            onClick={() => setActiveLink("Apps")}
+            onSetActive={() => setActiveLink("Apps")}
+            className={`${activeLink === "Apps" ? "text-red-500" : ""} cursor-pointer hover:text-red-500`}
+          >
+            Apps
+          </Link>
+           
+          </li>
+          <li>
+            <Link
+            to="Science"
+            spy={true}
+            smooth={true}
+            duration={800}
+            onClick={() => setActiveLink("Science")}
+            onSetActive={() => setActiveLink("Science")}
+            className={`${activeLink === "Science" ? "text-red-500" : ""} cursor-pointer hover:text-red-500`}
+          >
+            Science
+          </Link>
+           
+          </li>
+          <li>
+            <Link
+            to="Awards"
+            spy={true}
+            smooth={true}
+            duration={800}
+            onClick={() => setActiveLink("Awards")}
+            onSetActive={() => setActiveLink("Awards")}
+            className={`${activeLink === "Awards" ? "text-red-500" : ""} cursor-pointer hover:text-red-500`}
+          >
+            Awards
+          </Link>
+           
+          </li>
+          <li>
+            <Link
+            to="Blog"
+            spy={true}
+            smooth={true}
+            duration={800}
+            onClick={() => setActiveLink("Blog")}
+            onSetActive={() => setActiveLink("Blog")}
+            className={`${activeLink === "Blog" ? "text-red-500" : ""} cursor-pointer hover:text-red-500`}
+          >
+            Blog
+          </Link>
+            
+          </li>
+          <li>
+            <Link
+            to="contactUs"
+            spy={true}
+            smooth={true}
+            duration={800}
+            onClick={() => setActiveLink("contactUs")}
+            onSetActive={() => setActiveLink("contactUs")}
+            className={`${activeLink === "contactUs" ? "text-red-500" : ""} cursor-pointer hover:text-red-500`}
+          >
+            Contact
+          </Link>
+           
+          </li>
+
+
+
+
+
+            {/* <li><a href="#" className="text-red-500">Home</a></li>
 
             <li>
               <Link to="HIW" smooth duration={800} className="hover:text-red-600 cursor-pointer">
@@ -106,7 +277,7 @@ const Header = () => {
               <Link to="contactUs" smooth duration={800} className="hover:text-red-600 cursor-pointer">
                 Contact
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       )}

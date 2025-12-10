@@ -13,16 +13,16 @@ const HIW = () => {
     <Element name='HIW'>
     <div className='flex flex-col items-center gap-8 px-5 md:px-16'>
       <div className='flex items-center flex-row flex-nowrap gap-2 justify-center'>
-        <span className='text-[36px] leading-normal md:text-[64px] text-black font-bold'>How</span>
-        <span className='text-[36px] leading-normal md:text-[64px] text-[#E2221F] font-bold'>It Works</span>
+        <span className='text-4xl md:text-6xl xl:text-7xl 2xl:text-8xl leading-normal text-black font-bold'>How</span>
+        <span className='text-4xl md:text-6xl xl:text-7xl 2xl:text-8xl leading-normal text-[#E2221F] font-bold'>It Works</span>
       </div>
       <div className='icon-block flex flex-col md:flex-row justify-center gap-10 md:gap-0'>
          <div className='flex flex-col items-center'>
           <div className='w-[97px] h-[97px]'>
              <img src={hiw1} alt='hiw1' className='w-full h-full'/>
            </div>
-           <p className='text-[20px] text-black font-semibold text-center'>Receive a Hint</p>
-           <p className='text-[#666666] text-[18px] font-normal text-center w-full max-w-[190px]'>Simple, science-backed nudge.</p>
+           <p className='sm:text-xs md:text-xl 2xl:text-3xl text-black font-semibold text-center'>Receive a Hint</p>
+           <p className='text-[#666666] sm:text-xs md:text-[18px] 2xl:text-[26px] !leading-[100%] font-normal text-center w-full max-w-[190px] 2xl:max-w-[200px]'>Simple, science-backed nudge.</p>
          </div>
 
          <div className='hidden md:block'>
@@ -33,8 +33,8 @@ const HIW = () => {
           <div className='w-[97px] h-[97px]'>
              <img src={hiw2} alt='hiw1' className='w-full h-full'/>
            </div>
-           <p className='text-[20px] text-black font-semibold text-center'>Take Action</p>
-           <p className='text-[#666666] text-[18px] font-normal text-center w-full max-w-[190px]'>Apply it in your daily routine.</p>
+           <p className='sm:text-xs md:text-xl 2xl:text-3xl text-black font-semibold text-center'>Take Action</p>
+           <p className='text-[#666666] sm:text-xs md:text-[18px] 2xl:text-[26px] !leading-[100%] font-normal text-center w-full max-w-[190px] 2xl:max-w-[200px]'>Apply it in your daily routine.</p>
          </div>
 
           <div className='hidden md:block'>
@@ -45,8 +45,8 @@ const HIW = () => {
           <div className='w-[97px] h-[97px]'>
              <img src={hiw3} alt='hiw1' className='w-full h-full'/>
            </div>
-           <p className='text-[20px] text-black font-semibold text-center'>Earn Points</p>
-           <p className='text-[#666666] text-[18px] font-normal text-center w-full max-w-[190px]'>Get rewarded for consistency.</p>
+           <p className='sm:text-xs md:text-xl 2xl:text-3xl text-black font-semibold text-center'>Earn Points</p>
+           <p className='text-[#666666] sm:text-xs md:text-[18px] 2xl:text-[26px] !leading-[100%] font-normal text-center w-full max-w-[190px] 2xl:max-w-[200px]'>Get rewarded for consistency.</p>
          </div>
 
           <div className='hidden md:block'>
@@ -57,12 +57,12 @@ const HIW = () => {
           <div className='w-[97px] h-[97px]'>
              <img src={hiw4} alt='hiw1' className='w-full h-full'/>
            </div>
-           <p className='text-[20px] text-black font-semibold text-center'>Track Progress</p>
-           <p className='text-[#666666] text-[18px] font-normal text-center w-full max-w-[190px]'>Watch your streaks grow.</p>
+           <p className='sm:text-xs md:text-xl 2xl:text-3xl text-black font-semibold text-center'>Track Progress</p>
+           <p className='text-[#666666] sm:text-xs md:text-[18px] 2xl:text-[26px] !leading-[100%] font-normal text-center w-full max-w-[190px] 2xl:max-w-[200px]'>Watch your streaks grow.</p>
          </div>
 
       </div>
-       <button className="bg-[#E2221F] mb-4 md:mt-6 text-white px-4 sm:px-6 ml-[0px] py-3 sm:py-4 rounded-lg text-xl sm:text-2xl  font-medium shadow-md">
+       <button className="bg-[#E2221F] w-[250px] mb-4 md:mt-6 text-white px-4 sm:px-6 ml-[0px] py-2 rounded-lg text-xl sm:text-2xl  font-medium shadow-md">
             Try a Sample Hint
       </button>
     </div>

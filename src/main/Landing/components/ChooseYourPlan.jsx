@@ -14,11 +14,11 @@ const ChooseYourPlan = () => {
 
   return (
     <div className="mt-10 px-6 max-w-7xl mx-auto flex flex-col items-center">
-      <h2 className="text-4xl md:text-6xl font-bold text-center md:text-left">
+      <h2 className="text-4xl md:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-center md:text-left">
         Choose <span className="text-red-500">Your Plan</span>
       </h2>
 
-      <p className="text-gray-500 text-lg text-center md:text-left mt-4 max-w-xl mx-auto md:mx-0">
+      <p className="text-gray-500 text-lg 2xl:text-xl text-center md:text-left mt-4 max-w-xl mx-auto md:mx-0">
         Start Free. Upgrade anytime. No commitments.
       </p>
 

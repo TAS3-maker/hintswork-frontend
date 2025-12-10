@@ -21,11 +21,11 @@ const GetStartedToday = () => {
       
      </div>
       <div className="flex flex-col gap-3 items-center md:items-start relative md:absolute md:left-0 md:top-1/2 md:-translate-y-1/2">
-        <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold md:whitespace-nowrap">
+        <h2 className="text-4xl md:text-6xl xl:text-7xl font-bold md:whitespace-nowrap">
           Get <span className="text-red-500">Started Today</span>
         </h2>
 
-        <p className="text-gray-500 text-base sm:text-lg md:max-w-md mx-auto md:mx-0">
+        <p className="text-gray-500 text-base sm:text-lg 2xl:text-xl md:max-w-md mx-auto md:mx-0">
           Available soon on App Store & Google Play
         </p>
 

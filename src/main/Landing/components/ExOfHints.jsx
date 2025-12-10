@@ -27,10 +27,10 @@ const ExOfHints = () => {
         
         {/* Heading */}
         <div className="text-center mb-10 px-2">
-          <h2 className="text-3xl md:text-5xl font-bold mb-10">
+          <h2 className="text-4xl md:text-6xl xl:text-7xl 2xl:text-8xl font-bold mb-10">
             Examples <span className="text-red-500">of Hints</span>
           </h2>
-          <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto">
+          <p className="text-gray-600 text-base md:text-lg 2xl:text-2xl max-w-2xl mx-auto">
             Every Hint is practical and easy to use. Explore categories across health, focus, and wellness.
           </p>
         </div>

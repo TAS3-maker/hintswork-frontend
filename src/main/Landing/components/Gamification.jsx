@@ -6,7 +6,7 @@ import medal from '../assets/medal2.png';
 const Gamification = () => {
   return (
     <div className="w-full px-4  md:px-16  py-10">
-      <h1 className="text-4xl py-6 mb-4 md:mb-10 md:text-5xl lg:mr-125 font-bold text-red-500 text-center font-Montserrat tracking-wide">
+      <h1 className="text-4xl md:text-6xl xl:text-7xl 2xl:text-8xl py-6 mb-4 md:mb-10 lg:mr-125 font-bold text-red-500 text-center font-Montserrat tracking-wide">
         Gamification
       </h1>
       <div className="w-full max-w-[1100px] m-auto flex flex-col md:flex-row items-center md:items-start justify-center gap-10 md:gap-20 relative">
@@ -16,11 +16,11 @@ const Gamification = () => {
           className="hidden md:block absolute md:h-25 md:w-25 md:mt-40 md:pr-8  left-0   top-35  right-2 w-32"
         />
         <div className="flex-1 flex flex-col items-center sm:items-start mt-15 ml-15 max-w-xl z-10 leading-relaxed">
-          <h2 className="text-2xl font-bold mb-2 text-center sm:text-start">Stay Motivated with Gamification</h2>
-          <p className="text-gray-600 text-base md:text-lg mb-6 text-center sm:text-start">
+          <h2 className="text-2xl 2xl:text-3xl font-bold mb-2 text-center sm:text-start">Stay Motivated with Gamification</h2>
+          <p className="text-gray-600 text-base md:text-lg 2xl:text-2xl mb-6 text-center sm:text-start">
             We designed points, streaks, and trophies to keep you engaged. Celebrate small wins, share your progress, and unlock bonuses as you go.
           </p>
-          <button className="bg-[#E2221F] w-full max-w-[275px]  mb-4 md:mt-6 text-white px-4 sm:px-6 ml-[0px] py-3 sm:py-4 rounded-lg text-xl sm:text-2xl  font-medium shadow-md">
+          <button className="bg-[#E2221F] w-[250px] mb-4 md:mt-6 text-white px-4 sm:px-6 ml-[0px] py-2 rounded-lg text-xl sm:text-2xl  font-medium shadow-md">
             How Points Work
           </button>
         </div>

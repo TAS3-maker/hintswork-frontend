@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Element } from 'react-scroll'
 import lightbulb from "../assets/lightbulb.png";
 import doublePhone from "../assets/doublePhone.png";
 import home from "../assets/Home.png";
@@ -8,6 +8,7 @@ import bulb from '../assets/bulb.png';
 import trophy from '../assets/trophy.png';
 const LandPage1 = () => {
   return (
+    <Element name="Home">
     <div
       className="testing relative font-sans bg-[#fedc63] px-5 md:px-0 pt-24 md:bg-transparent ">
      
@@ -24,7 +25,7 @@ const LandPage1 = () => {
           </div>
           <a
             href="#"
-            className="bg-red-500 hover:bg-red-600 transition-colors text-white px-6 py-3 rounded-md text-base sm:text-lg font-semibold shadow-md inline-block"
+            className="bg-[#E2221F] w-[250px] mb-4 md:mt-6 text-white px-4 sm:px-6 ml-[0px] py-2 rounded-lg text-xl sm:text-2xl  font-medium shadow-md"
           >
             Explore Hints
           </a>
@@ -66,6 +67,7 @@ const LandPage1 = () => {
             className="h-[160px]  w-auto object-contain ml-[40px]"
           /> */}
     </div>
+    </Element>
   );
 };
 export default LandPage1;
